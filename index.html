@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <h1>Library</h1>
+    <button id="add-book" class="btn">+ Add book</button>
+    <div class="overlay">
+        <form id="form" action="" method="get">
+            <h2>NEW BOOK</h2>
+            <div class="input-container">
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title" required>
+                <div class="error-message">This book already exists in your library</div>
+            </div>
+            <div class="input-container">
+                <label for="author">Author:</label>
+                <input type="text" name="author" id="author" required>
+            </div>
+            <div class="input-container">
+                <label for="pages">Page:</label>
+                <input type="number" name="pages" id="pages" min="1" required>
+            </div>
+            <div class="input-container">
+                <label for="is-read">Have you read it?</label>
+                <input type="checkbox" name="is-read" id="is-read">
+            </div>
+            <input type="submit" value="ADD NEW BOOK" class="btn" id="new-book">
+        </form>
+    </div>
+    <div class="library">
+        <!-- <div class="book">
+            <h2 class="title-book">Title book</h2>
+            <p class="author-book">Author book</p>
+            <p class="page-book">123</p>
+            <div class="btn-container">
+                <button class="btn" id="remove">REMOVE</button>
+                <button class="btn read" id="status">READ</button>
+            </div>
+        </div> -->
+    </div>
+</body>
+
+</html>
